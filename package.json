@@ -1,0 +1,31 @@
+{
+  "name": "KeepMoving",
+  "version": "0.0.0",
+  "description": "This is a website source code.",
+  "main": "keepMoving.js",
+  "dependencies": {
+    "express": "4.10.1",
+    "redis": "0.12.1",
+    "mongojs": "0.17.0",
+    "log4js": "0.6.21"
+  },
+  "scripts": {
+    "test": "test test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/albin3/KeepMoving.git"
+  },
+  "keywords": [
+    "nodejs",
+    "mongoodb",
+    "socketio",
+    "bootstrap"
+  ],
+  "author": "Albin Zeng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/albin3/KeepMoving/issues"
+  },
+  "homepage": "https://github.com/albin3/KeepMoving"
+}
