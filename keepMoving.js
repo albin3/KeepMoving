@@ -10,17 +10,20 @@ log4js.configure({
               filename: 'log/log4js.log', 
               category: 'log4jslog',
               maxLogSize: 204800,
-              backups: 10 }
+              backups: 10 
+            }
     ]
 });
 
 // define Logger
-var logger = log4js.getLogger();
+var logger = log4js.getLogger('log4jslog');
 app.use(log4js.connectLogger(logger, { level: 'auto' }));
 
 app.get('/', function(req, res) {
     res.json({ret: 1});
 });
+require('./app/routes/account').register(app);
+require('./app/routes/blog').register(app);
 
 app.listen(3024);
 console.log("listen at port 3000");
