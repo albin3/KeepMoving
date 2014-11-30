@@ -1,3 +1,0 @@
-KeepMoving.
-=======
-Blog
